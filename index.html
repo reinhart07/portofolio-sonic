@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tim Sonic — AgroLens AI | PIDI DIGDAYA X HACKATHON 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <img src="img/agrolens-logo.png" alt="AgroLens AI" style="width:36px;height:36px;border-radius:10px;"/>
+      <div>
+        <span class="logo-name">AgroLens AI</span>
+        <span class="logo-sub">Tim Sonic</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#tentang">Tentang</a>
+      <a href="#fitur">Fitur</a>
+      <a href="#tim">Tim</a>
+      <a href="#penyelenggara">Penyelenggara</a>
+      <a href="#tautan" class="nav-cta">Lihat Prototype</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#tentang" onclick="toggleMenu()">Tentang</a>
+    <a href="#fitur" onclick="toggleMenu()">Fitur</a>
+    <a href="#tim" onclick="toggleMenu()">Tim</a>
+    <a href="#penyelenggara" onclick="toggleMenu()">Penyelenggara</a>
+    <a href="#tautan" onclick="toggleMenu()">Tautan</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      PIDI DIGDAYA X HACKATHON 2026
+    </div>
+    <h1 class="hero-title">
+      <span class="line1">AgroLens</span>
+      <span class="line2">AI</span>
+    </h1>
+    <p class="hero-desc">
+      Platform agritech terintegrasi berbasis AI yang menghubungkan petani langsung ke pembeli,
+      dengan prediksi harga real-time, deteksi kualitas otomatis, dan credit scoring tanpa riwayat bank.
+    </p>
+    <div class="hero-tags">
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Computer Vision</span>
+      <span class="tag">Credit Scoring</span>
+      <span class="tag">Blockchain</span>
+      <span class="tag">Maps & GIS</span>
+    </div>
+    <div class="hero-btns">
+      <a href="https://github.com/reinhart07/agrolens-ai" target="_blank" class="btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub Repo
+      </a>
+      <a href="https://www.figma.com/design/92GZCcSldPZX3VSqZAA0tC/Untitled?node-id=0-1&t=Jm5KcOgBKFSrf5QL-1" target="_blank" class="btn-secondary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5zM12 2h3.5a3.5 3.5 0 1 1 0 7H12V2zm-6.5 8.5A3.5 3.5 0 0 0 5 14v.5a3.5 3.5 0 1 0 7 0V11H8.5A3.5 3.5 0 0 0 5.5 10.5zM12 11h3.5a3.5 3.5 0 1 1 0 7H12v-7zm-7 7.5A3.5 3.5 0 0 0 8.5 22H12v-7H8.5A3.5 3.5 0 0 0 5 18.5z"/></svg>
+        Figma Design
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-val">33.4M</span>
+        <span class="stat-lbl">Petani Indonesia</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat-item">
+        <span class="stat-val">91M</span>
+        <span class="stat-lbl">Penduduk Unbanked</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat-item">
+        <span class="stat-val">3 AI</span>
+        <span class="stat-lbl">Model Terintegrasi</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="mockup-frame">
+      <img src="img/mockup.png" alt="AgroLens Mockup" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="mockup-fallback">
+        <div class="mf-inner">
+          <img src="img/agrolens-logo.png" alt="AgroLens AI" style="width:36px;height:36px;border-radius:10px;"/>
+          <p>AgroLens AI</p>
+    
+        </div>
+      </div>
+    </div>
+    <div class="float-card fc1">
+      <div class="fc-icon" style="background:rgba(29,158,117,0.15)">📈</div>
+      <div>
+        <p class="fc-title">Prediksi Harga</p>
+        <p class="fc-val" style="color:#1D9E75">Rp 45.000/kg</p>
+      </div>
+    </div>
+    <div class="float-card fc2">
+      <div class="fc-icon" style="background:rgba(55,138,221,0.15)">🛡️</div>
+      <div>
+        <p class="fc-title">Kualitas AI</p>
+        <p class="fc-val" style="color:#378ADD">Grade A — 92%</p>
+      </div>
+    </div>
+    <div class="float-card fc3">
+      <div class="fc-icon" style="background:rgba(83,74,183,0.15)">💳</div>
+      <div>
+        <p class="fc-title">Credit Score</p>
+        <p class="fc-val" style="color:#534AB7">82.5 — Rendah</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section" id="tentang">
+  <div class="container">
+    <div class="section-badge">Latar Belakang</div>
+    <h2 class="section-title">Masalah yang Kami Selesaikan</h2>
+    <p class="section-sub">Tiga masalah struktural yang merugikan 33,4 juta petani Indonesia</p>
+    <div class="problem-grid">
+      <div class="problem-card" data-aos>
+        <div class="prob-icon">📉</div>
+        <h3>Rantai Distribusi Panjang</h3>
+        <p>Margin petani jauh lebih kecil dari harga konsumen akhir akibat 3–5 lapis perantara yang tidak memberikan nilai tambah signifikan.</p>
+        <div class="prob-stat">3–5 Lapis Perantara</div>
+      </div>
+      <div class="problem-card" data-aos>
+        <div class="prob-icon">👁️</div>
+        <h3>Tidak Ada Info Harga Real-time</h3>
+        <p>Disparitas harga petani vs konsumen bisa mencapai 50–100% untuk komoditas seperti cabai dan bawang merah.</p>
+        <div class="prob-stat">50–100% Disparitas Harga</div>
+      </div>
+      <div class="problem-card" data-aos>
+        <div class="prob-icon">🏦</div>
+        <h3>Tidak Ada Akses Kredit Formal</h3>
+        <p>91 juta penduduk Indonesia masih unbanked/underbanked (OJK 2024), termasuk jutaan petani kecil yang tidak bisa akses modal usaha.</p>
+        <div class="prob-stat">91 Juta Unbanked (OJK 2024)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FITUR -->
+<section class="section dark-section" id="fitur">
+  <div class="container">
+    <div class="section-badge green">Teknologi</div>
+    <h2 class="section-title light">Fitur Unggulan AgroLens AI</h2>
+    <p class="section-sub light">Satu platform, solusi lengkap untuk ekosistem pertanian Indonesia</p>
+    <div class="features-grid">
+      <div class="feat-card" data-aos>
+        <div class="feat-num">01</div>
+        <div class="feat-icon">📈</div>
+        <h3>Prediksi Harga AI</h3>
+        <p>Model XGBoost/LSTM memprediksi harga komoditas 7–30 hari ke depan. Data dari Badan Pangan Nasional + BMKG API.</p>
+        <span class="feat-tag">Machine Learning</span>
+      </div>
+      <div class="feat-card" data-aos>
+        <div class="feat-num">02</div>
+        <div class="feat-icon">📷</div>
+        <h3>Deteksi Kualitas Otomatis</h3>
+        <p>MobileNetV2 (Transfer Learning) deteksi grade A/B/C dari foto komoditas secara real-time dengan akurasi tinggi.</p>
+        <span class="feat-tag">Computer Vision</span>
+      </div>
+      <div class="feat-card" data-aos>
+        <div class="feat-num">03</div>
+        <div class="feat-icon">💳</div>
+        <h3>Credit Scoring Tanpa Bank</h3>
+        <p>Random Forest menghasilkan skor kredit 0–100 dari riwayat transaksi petani. Tanpa perlu rekening bank.</p>
+        <span class="feat-tag">AI Credit</span>
+      </div>
+      <div class="feat-card" data-aos>
+        <div class="feat-num">04</div>
+        <div class="feat-icon">🗺️</div>
+        <h3>Maps & Heatmap Harga</h3>
+        <p>Peta petani terdekat, tracking pengiriman real-time, dan heatmap harga komoditas per wilayah via Leaflet.js.</p>
+        <span class="feat-tag">GIS & Maps</span>
+      </div>
+      <div class="feat-card" data-aos>
+        <div class="feat-num">05</div>
+        <div class="feat-icon">🤖</div>
+        <h3>Chatbot Asisten AI</h3>
+        <p>Asisten berbasis Groq LLM Llama 3 menjawab pertanyaan harga komoditas, tips bertani, dan panduan ekspor 24/7.</p>
+        <span class="feat-tag">Groq LLM</span>
+      </div>
+      <div class="feat-card" data-aos>
+        <div class="feat-num">06</div>
+        <div class="feat-icon">🔗</div>
+        <h3>QR Traceability Blockchain</h3>
+        <p>Setiap produk memiliki QR code berbasis blockchain untuk membuktikan keaslian dan asal-usul dari petani ke konsumen.</p>
+        <span class="feat-tag">Blockchain</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section class="section" id="stack">
+  <div class="container">
+    <div class="section-badge">Teknologi</div>
+    <h2 class="section-title">Tech Stack</h2>
+    <div class="stack-grid">
+      <div class="stack-group" data-aos>
+        <h4>Frontend Web</h4>
+        <div class="stack-pills">
+          <span class="pill">React.js</span>
+          <span class="pill">Vite</span>
+          <span class="pill">Tailwind CSS</span>
+          <span class="pill">React Router</span>
+        </div>
+      </div>
+      <div class="stack-group" data-aos>
+        <h4>Mobile</h4>
+        <div class="stack-pills">
+          <span class="pill">React Native</span>
+          <span class="pill">Expo</span>
+        </div>
+      </div>
+      <div class="stack-group" data-aos>
+        <h4>Backend</h4>
+        <div class="stack-pills">
+          <span class="pill">FastAPI</span>
+          <span class="pill">Python 3.12</span>
+          <span class="pill">MySQL 8.0</span>
+          <span class="pill">JWT Auth</span>
+        </div>
+      </div>
+      <div class="stack-group" data-aos>
+        <h4>AI / ML</h4>
+        <div class="stack-pills">
+          <span class="pill">XGBoost</span>
+          <span class="pill">LSTM</span>
+          <span class="pill">MobileNetV2</span>
+          <span class="pill">Random Forest</span>
+          <span class="pill">Scikit-learn</span>
+          <span class="pill">TensorFlow</span>
+        </div>
+      </div>
+      <div class="stack-group" data-aos>
+        <h4>Eksternal API</h4>
+        <div class="stack-pills">
+          <span class="pill">BMKG API</span>
+          <span class="pill">Groq LLM</span>
+          <span class="pill">Leaflet.js</span>
+          <span class="pill">ReportLab</span>
+        </div>
+      </div>
+      <div class="stack-group" data-aos>
+        <h4>Data Sources</h4>
+        <div class="stack-pills">
+          <span class="pill">Badan Pangan Nasional</span>
+          <span class="pill">BPS 2023</span>
+          <span class="pill">OJK 2024</span>
+          <span class="pill">Kaggle</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIM -->
+<section class="section dark-section" id="tim">
+  <div class="container">
+    <div class="section-badge green">Tentang Kami</div>
+    <h2 class="section-title light">Tim Sonic</h2>
+    <p class="section-sub light">Universitas Dipa Makassar — PIDI DIGDAYA X HACKATHON 2026</p>
+    <div class="team-grid">
+
+      <div class="team-card" data-aos>
+        <div class="team-photo-wrap">
+          <img src="img/reinhart.jpg" alt="Reinhart" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="team-fallback" style="background:linear-gradient(135deg,#1D9E75,#0F6E56)">RE</div>
+          <div class="team-overlay">
+            <div class="team-overlay-role">
+              <span>💻</span>
+              <p>Full Stack & AI Engineer</p>
+            </div>
+          </div>
+        </div>
+        <div class="team-info">
+          <div class="team-header">
+            <div>
+              <h3>Reinhart Jens Robert</h3>
+              <p class="team-prodi">Teknik Informatika</p>
+            </div>
+            <span class="team-badge ketua">Ketua</span>
+          </div>
+          <p class="team-desc">Memimpin pengembangan backend FastAPI, integrasi model ML, dan arsitektur sistem.</p>
+          <div class="team-skills">
+            <span>FastAPI</span><span>React</span><span>Python ML</span><span>MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card" data-aos>
+        <div class="team-photo-wrap">
+          <img src="img/valendino.jpg" alt="Valendino" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="team-fallback" style="background:linear-gradient(135deg,#378ADD,#185FA5)">VA</div>
+          <div class="team-overlay">
+            <div class="team-overlay-role">
+              <span>📊</span>
+              <p>Business Analyst & PM</p>
+            </div>
+          </div>
+        </div>
+        <div class="team-info">
+          <div class="team-header">
+            <div>
+              <h3>Happy Valendino Hendrik Budi</h3>
+              <p class="team-prodi">Bisnis Digital</p>
+            </div>
+          </div>
+          <p class="team-desc">Menganalisis kebutuhan pasar dan mendefinisikan product roadmap AgroLens AI.</p>
+          <div class="team-skills">
+            <span>Market Research</span><span>Product Strategy</span><span>Agile</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card" data-aos>
+        <div class="team-photo-wrap">
+          <img src="img/djefri.jpg" alt="Djefri" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="team-fallback" style="background:linear-gradient(135deg,#f59e0b,#d97706)">DJ</div>
+          <div class="team-overlay">
+            <div class="team-overlay-role">
+              <span>🎨</span>
+              <p>UI/UX & Market Research</p>
+            </div>
+          </div>
+        </div>
+        <div class="team-info">
+          <div class="team-header">
+            <div>
+              <h3>Djefri Wotyla Nugroho</h3>
+              <p class="team-prodi">Kewirausahaan</p>
+            </div>
+          </div>
+          <p class="team-desc">Mendesain antarmuka yang intuitif untuk petani di lapangan dan memastikan UX optimal.</p>
+          <div class="team-skills">
+            <span>Figma</span><span>UI Design</span><span>User Research</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card" data-aos>
+        <div class="team-photo-wrap">
+          <img src="img/melky.jpg" alt="Melky" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="team-fallback" style="background:linear-gradient(135deg,#534AB7,#3C3489)">KE</div>
+          <div class="team-overlay">
+            <div class="team-overlay-role">
+              <span>💡</span>
+              <p>Business Model & GTM</p>
+            </div>
+          </div>
+        </div>
+        <div class="team-info">
+          <div class="team-header">
+            <div>
+              <h3>Melky</h3>
+              <p class="team-prodi">Bisnis Digital</p>
+            </div>
+          </div>
+          <p class="team-desc">Merancang model bisnis berkelanjutan dan strategi penetrasi pasar pertanian Indonesia.</p>
+          <div class="team-skills">
+            <span>Business Canvas</span><span> GTM Strategy</span><span> Pitching</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PENYELENGGARA -->
+<section class="section" id="penyelenggara">
+  <div class="container">
+    <div class="section-badge">Kolaborasi</div>
+    <h2 class="section-title">Diselenggarakan Oleh</h2>
+    <p class="section-sub">PIDI DIGDAYA X HACKATHON 2026 diselenggarakan bersama lembaga-lembaga terkemuka Indonesia</p>
+    <div class="sponsor-grid">
+      <div class="sponsor-card" data-aos>
+        <img src="img/BI.png" alt="Bank Indonesia" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+        <span class="sponsor-fallback">Bank Indonesia</span>
+      </div>
+      <div class="sponsor-card" data-aos>
+        <img src="img/OJK.png" alt="OJK" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+        <span class="sponsor-fallback">OJK</span>
+      </div>
+      <div class="sponsor-card" data-aos>
+        <img src="img/ASPI.jpg" alt="ASPI" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+        <span class="sponsor-fallback">ASPI</span>
+      </div>
+      <div class="sponsor-card" data-aos>
+        <img src="img/Fintech.png" alt="Fintech Indonesia" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+        <span class="sponsor-fallback">Fintech Indonesia</span>
+      </div>
+      <div class="sponsor-card" data-aos>
+        <img src="img/Apuvindo.png" alt="APUVINDO" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+        <span class="sponsor-fallback">APUVINDO</span>
+      </div>
+      <div class="sponsor-card" data-aos>
+        <img src="img/yppi.png" alt="LPPI" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+        <span class="sponsor-fallback">LPPI</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TAUTAN -->
+<section class="section dark-section" id="tautan">
+  <div class="container">
+    <div class="section-badge green">Akses</div>
+    <h2 class="section-title light">Tautan Penting</h2>
+    <p class="section-sub light">Akses semua dokumen dan prototype AgroLens AI</p>
+    <div class="links-grid">
+      <a href="https://github.com/reinhart07/agrolens-ai" target="_blank" class="link-card" data-aos>
+        <div class="lc-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </div>
+        <div class="lc-info">
+          <h4>GitHub Repository</h4>
+          <p>Source code lengkap AgroLens AI</p>
+          <span class="lc-url">github.com/reinhart07/agrolens-ai</span>
+        </div>
+        <div class="lc-arrow">→</div>
+      </a>
+
+      <a href="https://www.figma.com/design/92GZCcSldPZX3VSqZAA0tC/Untitled?node-id=0-1&t=Jm5KcOgBKFSrf5QL-1" target="_blank" class="link-card" data-aos>
+        <div class="lc-icon" style="background:rgba(83,74,183,0.15);color:#534AB7">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5zM12 2h3.5a3.5 3.5 0 1 1 0 7H12V2zm-6.5 8.5A3.5 3.5 0 0 0 5 14v.5a3.5 3.5 0 1 0 7 0V11H8.5A3.5 3.5 0 0 0 5.5 10.5zM12 11h3.5a3.5 3.5 0 1 1 0 7H12v-7zm-7 7.5A3.5 3.5 0 0 0 8.5 22H12v-7H8.5A3.5 3.5 0 0 0 5 18.5z"/></svg>
+        </div>
+        <div class="lc-info">
+          <h4>Figma Design</h4>
+          <p>UI/UX mockup dan prototype desain</p>
+          <span class="lc-url">figma.com/design/AgroLens</span>
+        </div>
+        <div class="lc-arrow">→</div>
+      </a>
+
+      <a href="https://drive.google.com/drive/folders/1jnZo5Mrgkj-uQ8bBl3ZXvLH0nUBbgs2M?usp=sharing" target="_blank" class="link-card" data-aos>
+        <div class="lc-icon" style="background:rgba(55,138,221,0.15);color:#378ADD">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <div class="lc-info">
+          <h4>Proposal Hackathon</h4>
+          <p>Dokumen proposal resmi Tim Sonic</p>
+          <span class="lc-url">Google Drive — PDF</span>
+        </div>
+        <div class="lc-arrow">→</div>
+      </a>
+
+      <a href="https://pidi.id" target="_blank" class="link-card" data-aos>
+        <div class="lc-icon" style="background:rgba(245,158,11,0.15);color:#f59e0b">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <div class="lc-info">
+          <h4>PIDI Official Website</h4>
+          <p>Pusat Inovasi Digital Indonesia</p>
+          <span class="lc-url">pidi.id</span>
+        </div>
+        <div class="lc-arrow">→</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="img/agrolens-logo.png" alt="AgroLens AI" style="width:36px;height:36px;border-radius:10px;"/>
+        <div>
+          <p class="footer-name">AgroLens AI</p>
+          <p class="footer-sub">Tim Sonic — Universitas Dipa Makassar</p>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 Tim Sonic · PIDI DIGDAYA X HACKATHON 2026 · Bank Indonesia & OJK</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
